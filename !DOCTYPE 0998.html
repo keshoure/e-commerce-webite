@@ -9,8 +9,6 @@
       margin: 0;
       background: #f5f5f5;
     }
-
-    /* Navigation Bar */
     nav {
       background-color: #0077cc;
       color: white;
@@ -29,8 +27,6 @@
     nav a:hover {
       background-color: #005fa3;
     }
-
-    /* Section Styling */
     section {
       padding: 20px;
       background: white;
@@ -42,8 +38,6 @@
     h2 {
       color: #0077cc;
     }
-
-    /* Forms */
     form {
       max-width: 400px;
       margin: auto;
@@ -81,8 +75,6 @@
   </style>
 </head>
 <body>
-
-  <!-- Navigation Menu -->
   <nav>
     <a href="#home">Home</a>
     <a href="#products">Product Items</a>
@@ -94,15 +86,10 @@
     <a href="#login">Login</a>
     <a href="#register">Register</a>
   </nav>
-
-  <!-- Home Section -->
   <section id="home">
     <h2>Welcome to SmartShop</h2>
     <p>Your one-stop destination for shopping, reviews, and more!</p>
   </section>
-
-  <!-- Product Section -->
-
   <section id="products">
     <h2>Product Items</h2>
     <ul>
@@ -116,8 +103,6 @@
  <img src="C:\Users\kesho\Pictures\download (2).jpeg">
     </ul>
   </section>
-
-  <!-- Registration Form -->
   <section id="register">
     <h2>User Registration</h2>
     <form id="registerForm">
@@ -128,8 +113,6 @@
     </form>
     <p id="regMsg" style="text-align:center;color:green;"></p>
   </section>
-
-  <!-- Login Form -->
   <section id="login">
     <h2>User Login</h2>
     <form id="loginForm">
@@ -139,8 +122,6 @@
     </form>
     <p id="logMsg" style="text-align:center;color:red;"></p>
   </section>
-
-  <!-- Orders -->
   <section id="orders">
     <h2>Your Orders</h2>
     <ul>
@@ -149,8 +130,6 @@
       <li>Order #1003 - Cancelled ❌</li>
     </ul>
   </section>
-
-  <!-- Wishlist -->
   <section id="wishlist">
     <h2>Your Wishlist</h2>
     <ul>
@@ -160,8 +139,6 @@
 <img src="C:\Users\kesho\Pictures\download (4).jpeg">
     </ul>
   </section>
-
-  <!-- Comments & Reviews -->
   <section id="reviews">
     <h2>Customer Reviews</h2>
     <ul>
@@ -169,15 +146,11 @@
       <li>⭐⭐⭐⭐ “Excellent product experience.”</li>
     </ul>
   </section>
-
-  <!-- Customer Care -->
   <section id="care">
     <h2>Customer Care</h2>
     <p>📞 Call us: 1800-123-456</p>
     <p>✉️ Email:support@smartshop.com</p>
   </section>
-
-  <!-- Reporting -->
   <section id="report">
     <h2>Report an Issue</h2>
     <form>
@@ -187,23 +160,16 @@
       <button>Submit Report</button>
     </form>
   </section>
-
-  <!-- About Us -->
   <section id="about">
     <h2>About Us</h2>
     <p>SmartShop is your trusted online marketplace for premium products and customer satisfaction.</p>
   </section>
-
-  <!-- Contact Us -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p>📍 Address: 123 SmartStreet, Chennai, India</p>
     <p>📧 Email: info@smartshop.com</p>
   </section>
-
-  <!-- JavaScript Validation -->
   <script>
-    // Registration Form Validation
     document.getElementById("registerForm").addEventListener("submit", function(e) {
       e.preventDefault();
       let name = document.getElementById("regName").value.trim();
@@ -218,8 +184,6 @@
         document.getElementById("regMsg").innerText = "Registration successful!";
       }
     });
-
-    // Login Validation
     document.getElementById("loginForm").addEventListener("submit", function(e) {
       e.preventDefault();
       let email = document.getElementById("logEmail").value.trim();
@@ -236,3 +200,4 @@
 
 </body>
 </html>
+
